@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6-gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        s{
+            margin: 0%;
+            padding: 0%;
+        }
+        :root{
+            --blau: #009F96;
+            --morado: #4B006F;
+            --negre: #000000;
+            --autor: 'Josefin Sans', sans-serif;;
+            --titol_descripcio: 'Josefin Sans', sans-serif;;
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            font-family: var(--autor);
+            color: var(--negre);
+            font-size: 0.6em;
+            font-weight: 300;
+        
+        }
+        h2{
+            font-family: var(--titol_descripcio);
+            color: var(--morado);
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        p{
+            font-family: var(--titol_descripcio);
+            color: var(--negre);
+            font-size: 0.6em;
+            font-weight: 400;
+        }
+        .gallery{
+            padding: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            transition: flex-grow 1s;
+            background-color: rgb(232, 244, 255);
+            border-radius: 0.2em;
+            flex-basis: 25%;
+            align-items: center;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:nth-child(1){
+            flex-grow: 1;
+        }
+        .card:nth-child(5){
+            flex-grow: 1;
+        }
+        .card_img{
+            transition: height 1s;
+            width: 100%;
+            height: 270px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card:hover{
+            flex-grow: 1;
+            box-shadow: 0.1em 0.1em 0.5em;
+        }
+        .card_img:hover{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/01.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Miguel Ángel</h1>
+                    <h2>La creación de Adán</h2>
+                    <p>En la parte central de la bóveda del techo de la Capilla Sixtina, en la Ciudad del Vaticano, se encuentra esta obra de arte que es fundamental para la fe católica. Aunque existe una teoría de que Miguel Ángel habría pintado alrededor de la figura de Dios un bosquejo anatómico del cerebro humano. Esta no sería la primera vez que el artista coloca discretamente su conocimiento científico en sus obras.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/02.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Leonardo da Vinci</h1>
+                    <h2>La Mona Lisa</h2>
+                    <p>Considerada una de las grandes joyas del museo Louvre, en París, y una de las obras de arte más misteriosas del mundo. La técnica con la que fue pintada ha sido estudiada en múltiples ocasiones por los efectos ópticos en los ojos y su sonrisa vacilante. Además, ha sido sujeta a grandes polémicas, como su rapto a principios del siglo XX.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/03.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Sandro Botticelli</h1>
+                    <h2>El nacimiento de Venus</h2>
+                    <p>Esta pintura mítica, tanto por la historia detrás como por su proceso creativo. El cuadro fue pintado de acuerdo con el método de témpera, que a pesar de los siglos que nos separan de su creación conserva su belleza. Su delicadeza es tal, que a primera vista pocos notan la desproporción del cuello de la diosa emergiendo en el mar. Para admirar esta obra de arte a detalle, la puedes disfrutar en la Galería de los Uffizi en Florencia.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/04.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Diego Velázquez</h1>
+                    <h2>Las meninas</h2>
+                    <p>Es una de las obras de arte más analizadas en el mundo del arte. La obra gira en torno a la infanta Margarita de Austria, rodeada por sus sirvientes, "las meninas", aunque la pintura representa también otros personajes como el rey Felipe IV y su esposa Mariana de Austria. Lo interesante del cuadro es que está pintado a modo de reflejo y en ella, se descubren muchos detalles que no se aprecian a primera vista, por lo que puedes descubrirlas en el Museo del Prado de Madrid.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/05.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Claude Monet</h1>
+                    <h2>Nenúfares</h2>
+                    <p>Es una serie de pinturas de aproximadamente 250 obras, con representaciones del Jardín de Giverny, donde se instaló Monet con su familia en 1890. Los cuadros intentan capturar la belleza de la naturaleza y sus sutiles cambios. Cada uno debían quedar suspendidos (dentro de una estancia circular) para que crean el efecto del transcurso de un día o el de las cuatro estaciones. En el Museo de la Orangerie en París, se encuentran colocados de esta manera, pero alrededor del mundo varios museos lo incluyeron en sus colecciones.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/06.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Johannes Vermeer</h1>
+                    <h2>La joven de la perla</h2>
+                    <p>Considerada la Mona Lisa del norte de Europa, esta pintura ha sido uno de los grandes misterios del mundo del arte. La posición del retrato y el pendiente de perla que destaca en su vestimenta. La obra ubicada en el Museo Mauritshuis, en los Países Bajos, se pudo quedar en el olvido si no hubiera sido comprada a principios del siglo XX, en una subasta por solo unos pocos florines.</p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
